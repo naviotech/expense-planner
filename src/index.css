@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .bg-header-multiple {
+    @apply bg-no-repeat;
+    background-image: url('/bg-header.png'), url('/bg-header2.png');
+    background-position: right top, right bottom;
+  }
+}
+
+.swipeable-list-item__leading-actions, 
+.swipeable-list-item__trailing-actions {
+  @apply text-white text-lg uppercase font-bold;
+}
+.swipeable-list-item__leading-actions{
+  @apply bg-blue-600;
+}
+.swipeable-list-item__trailing-actions {
+  @apply bg-pink-600;
+}
+.swipeable-list .swipe-action {
+  @apply flex justify-center items-center
+}
