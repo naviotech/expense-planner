@@ -17,7 +17,7 @@ const FirstForm = () => {
   
   return (
     <section className="-mt-24 mb-10 w-full md:flex md:flex-col md:justify-center md:items-center max-w-screen-md lg:-mt-10" id="panel1">
-      <h2 className="font-bold text-center text-xl mb-12">Introduce your badget</h2>
+      <h2 className="font-bold text-center text-xl mb-12">Introduce your budget</h2>
       <form className="panel p-5 flex flex-col bg-[#FFF0EC] gap-6 md:min-w-[70%]" onSubmit={handleSubmit}>
         <input value={valid ?? ''}
             onChange={(e) => setValid(e.target.value === '' ? null : +e.target.value)} type="number" placeholder="500" className="p-2 text-[#F3603C] outline-none"></input>
